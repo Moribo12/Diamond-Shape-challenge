@@ -5,7 +5,7 @@ public class Diamond_shape {
 public static int getSize(){
     
     Scanner s = new Scanner(System.in);
-    System.out.print("Enter the size number: ");
+    System.out.print("Enter the size of a diamond you want: ");
     int size = s.nextInt();
     s.close();
 
@@ -29,11 +29,11 @@ public static int getCenter(int size){
         if(size % 2 == 0){
         size +=1;
         System.out.println(size);
-    } 
+        } 
 
         int asterisksGen =0;
         
-        // loop to ensure that the row numbers don't go above the size
+       
         for(int row =0; row < size; row++){
         // loop for the columns
           for(int col =0; col < size; col++){
